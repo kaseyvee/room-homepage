@@ -1,18 +1,110 @@
-.nav {
-  background-color: pink;
+$navHeight: 10rem;
 
+.nav {
+  @include spartan(600);  font-size: 1.25rem;
+  position: fixed;
+  height: $navHeight;
+  width: 100%;
+  
   &_main {
     @include center-row;
     position: relative;
-    height: 10rem;
+    height: 100%;
 
     &_menu-open {
       position: absolute;
       left: 2rem;
+      cursor: pointer;
     }
 
     &_list {
       display: none;
     }
+  }
+
+  &_mobile-overlay {
+    
+    &_background {
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &_main {
+      @include center-row;
+      justify-content: space-between;
+      background-color: $white;
+      width: 100%;
+      height: $navHeight;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+
+      &_menu-close {
+        margin-left: 2rem;
+      }
+  
+      &_list {
+        @include center-row;
+        gap: 3rem;
+        margin-right: 2rem;
+
+        &_item {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .nav {
+    &_main {
+      justify-content: flex-start !important;
+
+      &_menu-open {
+        display: none;
+      }
+
+      &_logo-container {
+        margin: 0 5rem;
+      }
+
+      &_list {
+        @include center-row;
+        gap: 3rem;
+
+        &_item {
+          color: $white;
+        }
+      }
+    }
+
+    &_mobile-overlay {
+      display: none;
+    }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+  
+  100% {
+    transform: translateY(-100%);
   }
 }

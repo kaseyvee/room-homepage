@@ -1,2 +1,16 @@
 @import "abstracts";
 @import "components";
+
+html {
+  body {
+    @include spartan;
+    margin: 0;
+
+    .App {
+      background-color: rebeccapurple;
+    }
+  }
+}
+:root {
+  font-size: 12px;
+}

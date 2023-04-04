@@ -5,6 +5,7 @@ $navHeight: 10rem;
   position: fixed;
   height: $navHeight;
   width: 100%;
+  z-index: 8;
   
   &_main {
     @include center-row;
@@ -30,7 +31,7 @@ $navHeight: 10rem;
       top: 0;
       height: 100vh;
       width: 100%;
-      z-index: 1;
+      z-index: 9;
     }
 
     &_main {
@@ -45,6 +46,7 @@ $navHeight: 10rem;
 
       &_menu-close {
         margin-left: 2rem;
+        cursor: pointer;
       }
   
       &_list {

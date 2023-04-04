@@ -5,14 +5,11 @@ html {
   body {
     @include spartan;
     margin: 0;
-    height: 100vh;
-    background-color: rebeccapurple;
+    // height: 100vh;
+    // background-color: rebeccapurple;
 
     a {
       text-decoration: none;
-    }
-
-    .App {
     }
   }
 }

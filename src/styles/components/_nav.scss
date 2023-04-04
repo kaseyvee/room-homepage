@@ -1,0 +1,18 @@
+.nav {
+  background-color: pink;
+
+  &_main {
+    @include center-row;
+    position: relative;
+    height: 10rem;
+
+    &_menu-open {
+      position: absolute;
+      left: 2rem;
+    }
+
+    &_list {
+      display: none;
+    }
+  }
+}

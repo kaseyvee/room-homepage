@@ -1,0 +1,16 @@
+@mixin border($color) {
+  border: 1px solid $color;
+}
+
+@mixin center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

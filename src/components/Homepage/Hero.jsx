@@ -33,7 +33,7 @@ function Hero() {
   }
 
   function handleCheckIfDesktop() {
-    if (window.innerWidth < 595) {
+    if (window.innerWidth < 481) {
       return setIsDesktop(false);
     }
 
@@ -69,18 +69,20 @@ function Hero() {
       </div>
 
       <div className="hero_content">
-        <h1 className="hero_content_header">
-          {heroItems[heroItem].header}
-        </h1>
+        <div className="hero_content_container">
+          <h1 className="hero_content_container_header">
+            {heroItems[heroItem].header}
+          </h1>
 
-        <p className="hero_content_description">
-          {heroItems[heroItem].description}
-        </p>
+          <p className="hero_content_container_description">
+            {heroItems[heroItem].description}
+          </p>
 
-        <button className="hero_content_button">
-          SHOP NOW
-          <img src="icon-arrow.svg" alt="right arrow" />
-        </button>
+          <button className="hero_content_container_button">
+            SHOP NOW
+            <img src="icon-arrow.svg" alt="right arrow" />
+          </button>
+        </div>
       </div>
     </div>
   );

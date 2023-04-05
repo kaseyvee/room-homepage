@@ -1,2 +1,13 @@
 @import "about";
 @import "hero";
+
+.homepage {
+  height: 100vh;
+}
+
+@media (min-width: 889px) {
+  .homepage {
+    display: grid;
+    grid-template-rows: 65% 35%;
+  }
+}

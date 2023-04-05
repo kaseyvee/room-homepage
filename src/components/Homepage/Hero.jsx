@@ -15,8 +15,10 @@ function Hero() {
   // }, 5000);
 
   function handleRotateItems(action) {
+    const lastItemPosition = heroItems.length - 1;
+
     if (action === "next") {
-      if (heroItem === 2) {
+      if (heroItem === lastItemPosition) {
         return setHeroItem(0);
       }
 
@@ -25,7 +27,7 @@ function Hero() {
 
     if (action === "prev") {
       if (heroItem === 0) {
-        return setHeroItem(2);
+        return setHeroItem(lastItemPosition);
       }
     
       return setHeroItem(heroItem - 1);

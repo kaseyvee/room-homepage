@@ -1,7 +1,8 @@
 $navHeight: 10rem;
 
 .nav {
-  @include spartan(600);  font-size: 1.25rem;
+  @include spartan(600);
+  font-size: 1.25rem;
   position: fixed;
   height: $navHeight;
   width: 100%;

@@ -66,3 +66,19 @@
     }
   }
 }
+
+@media (min-width: 595px) {
+  .hero {
+    height: auto;
+    flex-direction: row;
+
+    &_image-container {
+
+      &_image {
+        height: 100%;
+        // width: fit-content;
+        // object-fit: none;
+      }
+    }
+  }
+}

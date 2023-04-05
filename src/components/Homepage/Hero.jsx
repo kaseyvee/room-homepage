@@ -5,6 +5,9 @@ import heroItems from "../../helpers/heroItems";
 function Hero() {
   const [heroItem, setHeroItem] = useState(0);
   const [isDesktop, setIsDesktop] = useState(false);
+  const [fade, setFade] = useState(false);
+
+  const animationDuration = 500;
 
   useEffect(() => {
     handleCheckIfDesktop();
@@ -16,6 +19,11 @@ function Hero() {
 
   function handleRotateItems(action) {
     const lastItemPosition = heroItems.length - 1;
+    setFade(true);
+
+    setTimeout(() => {
+      setFade(false);
+    }, animationDuration);
 
     if (action === "next") {
       if (heroItem === lastItemPosition) {
@@ -45,7 +53,12 @@ function Hero() {
   addEventListener("resize", handleCheckIfDesktop);
 
   return (
-    <div className="hero">
+    <div
+      className="hero"
+      style={fade ? {
+        animation: `fade ${animationDuration}ms ease-in-out forwards`
+      } : null}
+    >
 
       <div className="hero_image-container">
         <img

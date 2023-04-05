@@ -20,6 +20,11 @@ $navHeight: 10rem;
 
     &_list {
       display: none;
+
+      &_item {
+        @include navUnderline($white);
+        position: relative;
+      }
     }
   }
 
@@ -56,6 +61,8 @@ $navHeight: 10rem;
 
         &_item {
           color: $black;
+          position: relative;
+          @include navUnderline($black);
         }
       }
     }

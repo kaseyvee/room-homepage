@@ -14,3 +14,24 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin navUnderline($color) {
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $color;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0.25rem;
+    margin: auto;
+    transform: translateY(2rem);
+    transition: width 250ms ease-out;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}

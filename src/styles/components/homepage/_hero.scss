@@ -104,6 +104,7 @@
     }
 
     &_content {
+      position: relative;
 
       &_container {
         max-width: 33rem;
@@ -113,5 +114,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }

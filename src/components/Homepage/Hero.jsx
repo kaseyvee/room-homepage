@@ -11,11 +11,7 @@ function Hero() {
 
   useEffect(() => {
     handleCheckIfDesktop();
-  }, [])
-
-  // setInterval(() => {
-  //   return handleRotateItems("next");
-  // }, 5000);
+  }, [])  
 
   function handleRotateItems(action) {
     const lastItemPosition = heroItems.length - 1;
@@ -68,18 +64,25 @@ function Hero() {
         />
 
         <div className="hero_image-container_arrow-buttons">
-          <img
-            src="icon-angle-left.svg"
-            alt="see previous image"
+          <div
             className="hero_image-container_arrow-buttons_left"
             onClick={() => handleRotateItems("prev")}
+          >
+            <img
+              src="icon-angle-left.svg"
+              alt="see previous image"
             />
-          <img
-            src="icon-angle-right.svg"
-            alt="see next image"
+          </div>
+          
+          <div
             className="hero_image-container_arrow-buttons_right"
             onClick={() => handleRotateItems("next")}
-          />
+          >
+            <img
+              src="icon-angle-right.svg"
+              alt="see next image"
+            />
+          </div>
         </div>
       </div>
 
@@ -97,6 +100,28 @@ function Hero() {
             SHOP NOW
             <img src="icon-arrow.svg" alt="right arrow" />
           </button>
+        </div>
+
+        <div className="hero_content_arrow-buttons">
+          <div
+            className="hero_content_arrow-buttons_left"
+            onClick={() => handleRotateItems("prev")}
+          >
+            <img
+              src="icon-angle-left.svg"
+              alt="see previous image"
+            />
+          </div>
+
+          <div
+            className="hero_content_arrow-buttons_right"
+            onClick={() => handleRotateItems("next")}
+          >
+            <img
+              src="icon-angle-right.svg"
+              alt="see next image"
+            />
+          </div>
         </div>
       </div>
     </div>

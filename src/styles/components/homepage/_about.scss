@@ -1,15 +1,13 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  // height: 100vh;
-  // overflow: hidden;
+  flex-grow: 1;
 
   &_image-container {
+    display: flex;
 
     &_image {
       object-fit: cover;
       width: 100%;
+      height: auto;
     }
   }
 
@@ -34,32 +32,23 @@
         line-height: 1.75rem;
       }
     }
-  
   }
 }
 
 @media (min-width: 595px) {
   .about {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
-    height: auto;
-
-    &_image-container {
-
-      &_image {
-        height: 100%;
-        object-position: center;
-      }
-    }
+    grid-template-columns: 3fr 4fr 3fr;
   }
 }
 
 @media (min-width: 889px) {
   .about {
-    display: flex;
-    flex-direction: row;
+    flex-shrink: 1;
+    grid-column: span 10;
     
     &_content {
+      padding: 3rem 3rem;
 
       &_container {
         max-width: 40rem;
@@ -71,3 +60,7 @@
     }
   }
 }
+
+// @media (max-height:) {
+  
+// }

@@ -3,13 +3,13 @@
 
 .homepage {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 889px) {
   .homepage {
-    height: 100vh;
-    overflow: hidden;
     display: grid;
-    grid-template-rows: 66% 34%;
+    grid-template-columns: repeat(10, 1fr);
   }
 }

@@ -1,5 +1,4 @@
 .hero {
-  // height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -35,7 +34,6 @@
 
   &_content {
     @include center-column;
-    position: relative;
     padding: 5rem 3rem;
 
     &_container {
@@ -84,12 +82,6 @@
   }
 }
 
-@media (min-width: 481px) {
-  .hero {
-    height: auto;
-  }
-}
-
 @media (min-width: 889px) {
   .hero {
     display: grid;
@@ -97,11 +89,6 @@
     grid-column: span 10;
 
     &_image-container {
-
-      &_image {
-        height: 100%;
-      }
-
       &_arrow-buttons {
         display: none;
       }
@@ -134,9 +121,9 @@
           height: 100%;
           transition-duration: 200ms;
 
-        &:hover {
-          opacity: 0.7;
-        }
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
     }
@@ -147,6 +134,7 @@
   0% {
     opacity: 0.75;
   }
+
   100% {
     opacity: 1;
   }

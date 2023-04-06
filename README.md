@@ -18,8 +18,10 @@ Users should be able to:
 ![Desktop View](https://i.imgur.com/Ymfe2vP.png)
 
 #### Mobile View
-<img src="https://i.imgur.com/MoXz1pJ.png" width="305">
-<img src="https://i.imgur.com/eWBADAv.png" width="305">
+<p float="left">
+  <img src="https://i.imgur.com/MoXz1pJ.png" width="305">
+  <img src="https://i.imgur.com/eWBADAv.png" width="305">
+</p>
 
 ### Built with
 

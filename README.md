@@ -2,7 +2,7 @@
 
 This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Check out my other solutions on Frontend Mentor at [@kaseyvee](https://www.frontendmentor.io/profile/kaseyvee).
+Check out my other solutions on Frontend Mentor at [@kaseyvee](https://www.frontendmentor.io/profile/kaseyvee) or [frontend-mentor-challenges](https://github.com/kaseyvee/frontend-mentor-challenges).
 
 ### The challenge
 
@@ -15,10 +15,11 @@ Users should be able to:
 ### Screenshots
 
 #### Desktop View
-![Desktop View](https://i.imgur.com/eLgLHgv.png)
+![Desktop View](https://i.imgur.com/Ymfe2vP.png)
 
 #### Mobile View
-![Mobile View](https://i.imgur.com/kHWDQ97.png)
+<img src="https://i.imgur.com/MoXz1pJ.png" width="305">
+<img src="https://i.imgur.com/eWBADAv.png" width="305">
 
 ### Built with
 

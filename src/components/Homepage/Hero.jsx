@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import heroItems from "../../helpers/heroItems";
+import ArrowButtons from "../ArrowButtons";
 
 function Hero() {
   const [heroItem, setHeroItem] = useState(0);
@@ -47,27 +48,10 @@ function Hero() {
           <img src={`mobile-image-hero-${heroItem + 1}.jpg`} />
         </picture>
 
-        <div className="hero_image-container_arrow-buttons">
-          <div
-            className="hero_image-container_arrow-buttons_left"
-            onClick={() => handleRotateItems("prev")}
-          >
-            <img
-              src="icon-angle-left.svg"
-              alt="see previous image"
-            />
-          </div>
-          
-          <div
-            className="hero_image-container_arrow-buttons_right"
-            onClick={() => handleRotateItems("next")}
-          >
-            <img
-              src="icon-angle-right.svg"
-              alt="see next image"
-            />
-          </div>
-        </div>
+        <ArrowButtons
+          prev={() => handleRotateItems("prev")}
+          next={() => handleRotateItems("next")}
+        />
       </div>
 
       <div className="hero_content">
@@ -86,27 +70,10 @@ function Hero() {
           </button>
         </div>
 
-        <div className="hero_content_arrow-buttons">
-          <div
-            className="hero_content_arrow-buttons_left"
-            onClick={() => handleRotateItems("prev")}
-          >
-            <img
-              src="icon-angle-left.svg"
-              alt="see previous image"
-            />
-          </div>
-
-          <div
-            className="hero_content_arrow-buttons_right"
-            onClick={() => handleRotateItems("next")}
-          >
-            <img
-              src="icon-angle-right.svg"
-              alt="see next image"
-            />
-          </div>
-        </div>
+        <ArrowButtons
+          prev={() => handleRotateItems("prev")}
+          next={() => handleRotateItems("next")}
+        />
       </div>
     </div>
   );

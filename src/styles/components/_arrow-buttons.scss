@@ -1,0 +1,14 @@
+.arrow-buttons {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  
+  &_left, &_right {
+    background-color: $black;
+    transition-duration: 200ms;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

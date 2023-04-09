@@ -46,6 +46,15 @@
   .about {
     flex-shrink: 1;
     grid-column: span 10;
+
+    &_image-container {
+      position: relative;
+      
+      &_image {
+        position: absolute;
+        height: 100%;
+      }
+    }
     
     &_content {
       padding: 3rem 3rem;

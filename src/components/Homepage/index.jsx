@@ -1,13 +1,13 @@
 import React from 'react';
-import About from './About';
-import Hero from './Hero';
+import About from './_about';
+import Hero from './_hero';
 
-function Homepage(props) {
+function Homepage() {
   return (
-    <div className='homepage'>
+    <main className='homepage'>
       <Hero />
       <About />
-    </div>
+    </main>
   );
 }
 

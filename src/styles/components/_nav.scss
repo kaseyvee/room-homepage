@@ -19,7 +19,7 @@ $navHeight: 12rem;
       cursor: pointer;
     }
 
-    &_list {
+    .nav-list {
       display: none;
 
       &_item {
@@ -55,7 +55,7 @@ $navHeight: 12rem;
         cursor: pointer;
       }
   
-      &_list {
+      .nav-list {
         @include center-row;
         gap: 3rem;
         margin-right: 2rem;
@@ -83,7 +83,7 @@ $navHeight: 12rem;
         margin: 0 5rem;
       }
 
-      &_list {
+      .nav-list {
         @include center-row;
         gap: 3rem;
 

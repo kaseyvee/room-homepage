@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import heroItems from "../../helpers/heroItems";
 import ArrowButtons from "../ArrowButtons";
 
@@ -35,7 +34,7 @@ function Hero() {
   }
 
   return (
-    <div
+    <section
       className="hero"
       style={fade ? {
         animation: `fade ${animationDuration}ms ease-in-out forwards`
@@ -75,7 +74,7 @@ function Hero() {
           next={() => handleRotateItems("next")}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

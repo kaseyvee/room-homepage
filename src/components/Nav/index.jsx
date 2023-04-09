@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import NavList from './_nav-List';
 
 function Nav() {
   const [mobileNavAnimation, setMobileNavAnimation] = useState("");
@@ -27,12 +28,7 @@ function Nav() {
           />
         </div>
 
-        <div className='nav_main_list'>
-          <a href='' className='nav_main_list_item'>home</a>
-          <a href='' className='nav_main_list_item'>shop</a>
-          <a href='' className='nav_main_list_item'>about</a>
-          <a href='' className='nav_main_list_item'>contact</a>
-        </div>
+        <NavList />
       </div>
 
       {mobileNavAnimation && <div className='nav_mobile-overlay'>
@@ -54,12 +50,7 @@ function Nav() {
             />
           </div>
 
-          <div className='nav_mobile-overlay_main_list'>
-            <a href='' className='nav_mobile-overlay_main_list_item'>home</a>
-            <a href='' className='nav_mobile-overlay_main_list_item'>shop</a>
-            <a href='' className='nav_mobile-overlay_main_list_item'>about</a>
-            <a href='' className='nav_mobile-overlay_main_list_item'>contact</a>
-          </div>
+          <NavList />
         </div>
       </div>}
     </header>

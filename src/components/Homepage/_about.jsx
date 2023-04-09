@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="about">
+    <section className="about">
       <div className="about_image-container">
         <img
           className="about_image-container_image"
@@ -18,9 +18,8 @@ function About() {
             Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.
           </p>
         </div>
+      </div>
 
-
-        </div>
       <div className="about_image-container">
         <img
           className="about_image-container_image"
@@ -28,7 +27,7 @@ function About() {
           alt="white chair in a all white room"
         />
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -44,12 +44,11 @@
 
 @media (min-width: 889px) {
   .about {
-    flex-shrink: 1;
     grid-column: span 10;
 
     &_image-container {
       position: relative;
-      
+
       &_image {
         position: absolute;
         height: 100%;

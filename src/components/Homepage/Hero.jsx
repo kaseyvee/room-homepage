@@ -4,14 +4,9 @@ import heroItems from "../../helpers/heroItems";
 
 function Hero() {
   const [heroItem, setHeroItem] = useState(0);
-  const [isDesktop, setIsDesktop] = useState(false);
   const [fade, setFade] = useState(false);
 
   const animationDuration = 500;
-
-  useEffect(() => {
-    handleCheckIfDesktop();
-  }, [])  
 
   function handleRotateItems(action) {
     const lastItemPosition = heroItems.length - 1;
@@ -38,16 +33,6 @@ function Hero() {
     }
   }
 
-  function handleCheckIfDesktop() {
-    if (window.innerWidth < 481) {
-      return setIsDesktop(false);
-    }
-
-    return setIsDesktop(true);
-  }
-
-  addEventListener("resize", handleCheckIfDesktop);
-
   return (
     <div
       className="hero"
@@ -57,11 +42,10 @@ function Hero() {
     >
 
       <div className="hero_image-container">
-        <img
-          src={`${isDesktop ? "desktop" : "mobile"}-image-hero-${heroItem + 1}.jpg`}
-          alt="chair assortment"
-          className="hero_image-container_image"
-        />
+        <picture className="hero_image-container_image">
+          <source media="(min-width: 481px)" srcSet={`desktop-image-hero-${heroItem + 1}.jpg`} />
+          <img src={`mobile-image-hero-${heroItem + 1}.jpg`} />
+        </picture>
 
         <div className="hero_image-container_arrow-buttons">
           <div

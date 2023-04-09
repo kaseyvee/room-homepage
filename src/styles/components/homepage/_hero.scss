@@ -4,12 +4,16 @@
   flex-direction: column;
 
   &_image-container {
-    display: flex;
     position: relative;
-
+    
     &_image {
+      display: flex;
       width: 100%;
-      object-fit: cover;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
     }
 
     &_arrow-buttons {
@@ -89,6 +93,10 @@
     grid-column: span 10;
 
     &_image-container {
+      &_image {
+        height: 100%;
+      }
+      
       &_arrow-buttons {
         display: none;
       }

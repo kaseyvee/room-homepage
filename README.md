@@ -1,4 +1,4 @@
-# Frontend Mentor - Room homepage solution
+Room Homepage
 
 This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq/hub).
 

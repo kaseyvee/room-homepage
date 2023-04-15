@@ -1,6 +1,6 @@
 # Frontend Mentor - Room homepage solution
 
-This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq/hub).
 
 Check out my other solutions on Frontend Mentor at [@kaseyvee](https://www.frontendmentor.io/profile/kaseyvee) or [frontend-mentor-challenges](https://github.com/kaseyvee/frontend-mentor-challenges).
 
@@ -25,13 +25,17 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- [React](https://reactjs.org/) - JS library
+- Sass
 - Grid
 - Flexbox
-- Sass
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+
+### What I learned
+
+This project really helped me to solidy the impact of CSS grid. The biggest challenge of this project was getting the arrow buttons container to align/overlap perfectly with the "About our furniture" div when viewing on desktops and wider screens. CSS grid did just the job in helping to achieve this.
+
+![Arrow buttons container alignment](https://i.imgur.com/8vwo4bz.png)
 
 ### Continued development
 

@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import heroItems from "../../helpers/heroItems";
 import ArrowButtons from "../ArrowButtons";
 
@@ -6,16 +7,25 @@ function Hero() {
   const [heroItem, setHeroItem] = useState(0);
   const [fade, setFade] = useState(false);
 
+  
+  useEffect(() => {
+    const myInterval = setInterval(() => {
+      handleRotateItems("next");
+    }, 20000)
+
+    return () => clearInterval(myInterval);
+  }, [heroItem])
+
   const animationDuration = 500;
 
   function handleRotateItems(action) {
     const lastItemPosition = heroItems.length - 1;
     setFade(true);
 
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       setFade(false);
     }, animationDuration);
-
+    
     if (action === "next") {
       if (heroItem === lastItemPosition) {
         return setHeroItem(0);

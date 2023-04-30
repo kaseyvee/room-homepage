@@ -1,12 +1,11 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 import heroItems from "../../helpers/heroItems";
 import ArrowButtons from "../ArrowButtons";
 
 function Hero() {
   const [heroItem, setHeroItem] = useState(0);
   const [fade, setFade] = useState(false);
-
   
   useEffect(() => {
     const myInterval = setInterval(() => {
